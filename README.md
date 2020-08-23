@@ -1,6 +1,6 @@
 # KotORCam
 
-This is a MATLAB® program that constructs a camera animation for use in _Star Wars™: Knights of the Old Republic™_, visualizes it and—if approved by the user—saves it to a file. The positions and orientations of the camera are constructed such that the square of the acceleration is minimized, while constrained by user-indicated positions and orientations or their first derivatives at specific times.
+This program constructs a camera animation for use in _Star Wars™: Knights of the Old Republic™_, visualizes it and—if approved by the user—saves it to a file. The positions and orientations of the camera are constructed such that the square of the acceleration is minimized, while constrained by user-indicated positions and orientations or their first derivatives at specific times.
 
 Position and orientation animations are initially constructed using cubic Bézier curves. These curves are constructed independently for the _x_-, _y_- and _z_-coordinates, as well as for the _theta_- (yaw), _phi_- (pitch) and _psi_-angles (roll). Alternatively, the position of a subject (also constructed using Bézier curves) can be indicated, prompting the _theta_- and _phi_-angles to be replaced with values that keep the camera oriented towards this subject.
 
