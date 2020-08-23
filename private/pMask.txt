@@ -1,0 +1,8 @@
+% t     x       y       z       v_x     v_y     v_z
+1       1       1       1       1       1       1
+1       1       1       1       0       0       0
+1       1       1       1       1       1       1
+
+% A 0 indicates that the corresponding value from 'pKnots.txt' is to be
+% ignored.
+% A 0 in the 't' column tells the program to ignore that entire row.

@@ -1,0 +1,32 @@
+% t     theta   phi     psi     v_theta v_phi   v_psi
+0       0       0       0       0       0       0
+
+% Use decimal notation only!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For monotonic speed from v_0 to v_1 on the interval from t_0 to t_1,
+% assuming that a_1 == a_0 == 0, set:
+%
+% x_1 - x_0 = (t_1 - t_0) * (v_1 + v_0) / 2
+%           =
+%   Delta x = Delta t * average speed
+%
+% Conversely:
+%
+% t_1 - t_0 = (x_1 - x_0) * 2 / (v_1 + v_0)
+%           =
+%   Delta t = Delta x / average speed
+%
+%       v_1 = (x_1 - x_0) * 2 / (t_1 - t_0) - v_0
+%           =
+%       v_1 = Delta x * 2 / Delta t - v_0
+%
+% If a_1 == a_0 ~= 0, speed no longer changes monotonically, but
+% acceleration retains a parabolic shape.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For constant speed on the interval from t_0 to t_1, assuming that
+% v_1 == v_0 and that a_1 == a_0 == 0, set:
+%
+% x_1 - x_0 = (t_1 - t_0) * v_0
+%           =
+%   Delta x = Delta t * v_0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

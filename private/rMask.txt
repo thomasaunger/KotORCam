@@ -1,0 +1,6 @@
+% t     theta   phi     psi     v_theta v_phi   v_psi
+1       1       1       1       1       1       1
+
+% A 0 indicates that the corresponding value from 'rKnots.txt' is to be
+% ignored.
+% A 0 in the 't' column tells the program to ignore that entire row.
