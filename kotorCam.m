@@ -6,7 +6,7 @@ function kotorCam(camName)
 fprintf('Generating samples...');
 
 % Sample frequency.
-h = 32; % Hz
+h = 2; % Hz
 
 % Sample period.
 p = 1/h;
