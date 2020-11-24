@@ -6,7 +6,7 @@ function kotorCam(camName)
 fprintf('Generating samples...');
 
 % Sample frequency.
-h = 2; % Hz
+h = 32; % Hz
 
 % Sample period.
 p = 1/h;
@@ -65,6 +65,13 @@ fprintf('\nGenerating keys...');
 fprintf('\nCompressing keys...');
 
 [position, orientation] = compressKeys(position, orientation);
+
+%% Fix Stuttering Bug
+fprintf('\nFixing stuttering bug...');
+
+orientation(:, 2:4) = orientation(:, 2:4)*0.999999;
+
+% For some reason, this prevents prominent stuttering in some shots.
 
 %% Validate Keys
 fprintf('\nValidating keys...');
